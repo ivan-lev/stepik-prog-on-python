@@ -6,11 +6,10 @@ for i in range(d):
     for x in temp: # пробегаемся по каждому слову в списке
         if x not in a: # и если его нет
             a.append(x)# то добавляем в наш словарь
-l = int(input()) # вводим количество строк на проверку
-for i in range(l):
+for i in range(int(input())): # вводим количество строк (l) на проверку
     temp = input().split()
     for x in temp:
-        if (x.lower() not in a) and x not in b:
+        if (x.lower() not in a) and (x not in b):
             b.append(x)
 for i in b:
     print(i)
