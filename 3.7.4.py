@@ -1,3 +1,5 @@
+'''
+------- решение номер 1 -------
 b = [0, 0]
 for i in range(int(input())):
     a = input().lower().split()
@@ -11,3 +13,12 @@ for i in range(int(input())):
         b[1] += -int(a[1])
 for i in b:
     print(i, end = ' ')
+'''
+
+# решение номер 2
+
+d = {'юг': 0, 'север': 0, 'запад': 0, 'восток': 0}
+for i in range(int(input())):
+    a = input().lower().split()
+    d[a[0]] += int(a[1])
+print(d['восток'] - d['запад'], d['север'] - d['юг'])
